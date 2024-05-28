@@ -81,7 +81,7 @@ const MusicNotch = () => {
           <img
             src={MusicThumbnail}
             alt=""
-            className={`${expandedForm ? 'h-[60px] w-[60px] rounded-[16px]' : 'h-[24px] w-[24px] rounded-[10px]'} transition-all duration-500 ease-in-out`}
+            className={`${expandedForm ? 'h-[60px] w-[60px] rounded-[16px]' : 'h-[24px] w-[24px] rounded-[10px]'} transition-all duration-200 ease-in-out`}
           />
           <div className={`${expandedForm ? 'h-auto' : 'h-0 overflow-hidden'} transition-all duration-500 ease-in-out`}>
           <p className={`text-[#FFFFFF] text-[18px] font-medium transition-all duration-500 ease-in-out ${expandedForm ? 'opacity-100' : 'opacity-0'}`}>Considerations</p>
