@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: ios;
+  src: url(./assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
 
 body{
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: ios;
 }
 
 .metal{
@@ -23,6 +28,11 @@ body{
 
 .camera{
     background: radial-gradient(#3f3978,#0c0e29,#283964);
+}
+
+* {
+  user-select: none;
+  cursor: default;
 }
 
 

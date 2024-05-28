@@ -5,7 +5,8 @@ import MusicNotch from "./MusicNotch";
 import NavNotch from "./NavNotch";
 import FaceIdNotch from "./FaceIdNotch";
 
-const Notch = ({ animationType, dialedNumber }) => {
+const Notch = ({ animationType, dialedNumber , setAnimationType}) => {
+
   const notchComponents = {
     "": DefaultNotch,
     call: (props) => <CallNotch {...props} />,
@@ -18,8 +19,10 @@ const Notch = ({ animationType, dialedNumber }) => {
   const NotchComponent = notchComponents[animationType] || DefaultNotch;
 
   return (
-    <div className="w-auto h-auto absolute top-[15px] right-0 left-0 ml-auto mr-auto flex items-center justify-center z-10 cursor-pointer transition-all duration-200 ease-in-out">
-      <NotchComponent dialedNumber={dialedNumber} />
+    <div 
+    // ref={notchRef}
+     className="absolute top-[15px] right-0 left-0 ml-auto mr-auto flex items-center justify-center z-10 cursor-pointer">
+      <NotchComponent dialedNumber={dialedNumber} setAnimationType={setAnimationType}  />
     </div>
   );
 };

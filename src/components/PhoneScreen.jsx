@@ -31,7 +31,7 @@ const PhoneScreen = () => {
   return (
     <div className=" w-full h-full rounded-[60px] border-[10px] border-black relative overflow-hidden">
         <div className='bg-black/[.6] absolute top-0 left-0 w-full h-full z-10 hover:bg-transparent transition-all duration-500 ease '>
-        <Notch animationType={animationType} dialedNumber={dialedNumber} />
+        <Notch animationType={animationType} dialedNumber={dialedNumber} setAnimationType={setAnimationType} />
         {/* <Camera/> */}
         <Clock/>
         </div>
