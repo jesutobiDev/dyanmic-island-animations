@@ -51,6 +51,8 @@ Users/Viewers should be able to...
 4) After creating each of the components, I created the aniamtions and their vatious states designs
 5) Then used GSAP for animations  to make the transitions a little smoother.
 
+NB: Use the Icons at the bottom of the frame as triggers to display the animations 
+
 ### Built with
 
 - Tailwind CSS
